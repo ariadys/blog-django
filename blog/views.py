@@ -21,7 +21,7 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 
 def tag_list(request):
-	tags = Post.tags.all()
+	tags = Post.tags.all()     
 
 	return render(request, 'blog/tag_list.html', {'tags': tags})
 
